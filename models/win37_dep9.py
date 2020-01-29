@@ -120,12 +120,3 @@ def create_network(state, inputs, is_training, scope="win37_dep9", reuse=False):
                 nets[1]=slim.batch_norm(nets[1],is_training=is_training,scope='3_batch')
                 net=nets[0]+nets[1]
                 return net
-
-
-    #print('ffsdfd', len(net))
-    '''net1 = net.pop(0)
-    #print('gerggeg', len(net))
-    for i in net:
-        net1 += i
-    net1=slim.batch_norm(net1,is_training=False)
-    return net1'''
